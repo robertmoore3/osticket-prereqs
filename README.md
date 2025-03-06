@@ -59,16 +59,19 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <h3>Install Visual C++ Redistributable</h3>
 <ol>
-    <li>1. Install VC_redist.x86.exe from the osTicket-Installation-Files folder.</li>
+    <li>Install VC_redist.x86.exe from the osTicket-Installation-Files folder.</li>
 </ol>
 <h3>Install MySQL 5.5.62</h3>
 <ol>
     <li>Install MySQL 5.5.62 (mysql-5.5.62-win32.msi).</li>
     <li>Choose Typical Setup during installation.</li>
     <li>After installation, launch the MySQL Configuration Wizard:
-        -Select Standard Configuration.
-        -Set the MySQL root username: root.
-        -Set the password: root.</li>
+        <ul>
+        <li>Select Standard Configuration.</li>
+        <li>Set the MySQL root username: root.</li>
+        <li>Set the password: root.</li>
+        </ul>
+    </li>
 </ol>
 <br />
 
@@ -81,7 +84,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>Open PHP Manager.</li>
     <li> Click Register PHP and set the path to C:\PHP\php-cgi.exe.</li>
     <li>Restart IIS:
-        -Click Stop then Start the server.</li>
+        <ul><li>Click Stop then Start the server.</li></ul>
+    </li>
 </ol>
 <br />
 
@@ -93,7 +97,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>Copy the extracted upload folder to C:\inetpub\wwwroot.</li>
     <li>Rename upload to osTicket (C:\inetpub\wwwroot\osTicket).</li>
     <li>Restart IIS:
-        -Open IIS Manager → Stop and Start the server.</li>
+        <ul><li>Open IIS Manager → Stop and Start the server.</li></ul>
+    </li>
 </ol>
 <br />
 
@@ -111,10 +116,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>Double-click PHP Manager.</li>
     <li>Click Enable or disable an extension.</li>
     <li>Enable the following extensions:
-        -php_imap.dll
-        -php_intl.dll
-        -php_opcache.dll
-        </li>
+        <ul>
+        <li>php_imap.dll</li>
+        <li>php_intl.dll</li>
+        <li>php_opcache.dll</li>
+        </ul>
+    </li>
     <li> Refresh the osTicket page in your browser to confirm the changes.</li>
 </ol>
 <br />
@@ -126,8 +133,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <ol>
 <li> Install HeidiSQL from the osTicket-Installation-Files folder.</li>
 <li> Open HeidiSQL and create a new session with:
-    -Username: root
-    -Password: root</li>
+    <ul>
+        <li>Username: root</li>
+        <li>Password: root</li>
+    </ul>
+</li>
 <li> Click Connect.</li>
 <li> Create a new database named osTicket.</li>
 </ol>
@@ -139,24 +149,34 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <ol>
 <li> Go back to the osTicket setup page in your browser.</li>
 <li> Fill in the following database settings:
-    -MySQL Database: osTicket
-    -MySQL Username: root
-    -MySQL Password: root</li>
+    <ul>
+        <li>MySQL Database: osTicket</li>
+        <li>MySQL Username: root</li>
+        <li>MySQL Password: root</li>
+    </ul>
+</li>
 </li> Click Install Now!.</li>
 <li> Once installation is complete, visit your osTicket admin panel:
-    -Admin Login: http://localhost/osTicket/scp/login.php
-    -User Portal: http://localhost/osTicket/</li>
+    <ul>
+        <li>Admin Login: http://localhost/osTicket/scp/login.php</li>
+       <li>User Portal: http://localhost/osTicket/</li>
+    </ul>
+</li>
 </ol>
 <br />
 
 <h2>Final Cleanup & Security</h2>
 <ol>
 <li> Delete the setup directory:
-    - C:\inetpub\wwwroot\osTicket\setup</li>
+    <ul>
+        <li>C:\inetpub\wwwroot\osTicket\setup</li>
+    </ul>
+</li>
 <li> Set ost-config.php to read-only:
-    - Right-click C:\inetpub\wwwroot\osTicket\include\ost-config.php > Properties.
-    - Check ✅ Read-only.
-    </li>
+    <ul>
+        <li>Right-click C:\inetpub\wwwroot\osTicket\include\ost-config.php > Properties.</li>
+        <li>Check ✅ Read-only.</li>
+    </ul>
+</li>
 </ol>
 <br />
-I
