@@ -16,24 +16,21 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Windows 10</b> (21H2)
 
 <h2>List of Prerequisites</h2>
-- A suitable Azure subscription
+- A suitable PC or VM
 
 <h2>Installation Steps</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h2>Download Required Files</h2>
+<img src='https://github.com/user-attachments/assets/1de953dd-526f-45d7-806f-7eb50a1fd6c1' />
 <ol>
 <li>Download osTicket-Installation-Files.zip</li>
 <li>Extract it to your Desktop—it will create a folder named osTicket-Installation-Files.</li>
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 <h2>Install IIS with CGI</h2>
+<img src='https://github.com/user-attachments/assets/1b28d3d4-550a-4c2b-971e-2b106eaea8fd)' />
+
 <ol>
 <li>Open Windows Features (Control Panel > Programs > Turn Windows features on or off).</li>
 <li>Enable Internet Information Services (IIS).</li>
@@ -43,10 +40,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h2>Install Required Components</h2>
+<img src="https://github.com/user-attachments/assets/58377802-47f5-490a-bc62-037b20df84bf" />
+
 <h3>Install PHP Manager for IIS</h3>
 <ol>
     <li>Open the osTicket-Installation-Files folder.</li>
@@ -76,10 +72,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 <h2>Configure IIS for PHP</h2>
+<img src="https://github.com/user-attachments/assets/76c0d878-55f7-4ada-9652-dbb359bd89ec" />
 <ol>
     <li>Open IIS Manager (search IIS in the Start menu and run as Admin).</li>
     <li>Click on the server name (left panel).</li>
@@ -90,10 +85,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 <h2>Install osTicket</h2>
+<img src="https://github.com/user-attachments/assets/1d2b6cef-bba2-4394-a269-23e57abbd0e6" />
 <ol>
     <li>Extract osTicket v1.15.8 (osTicket-v1.15.8.zip) from the osTicket-Installation-Files folder.</li>
     <li>Copy the extracted upload folder to C:\inetpub\wwwroot.</li>
@@ -103,10 +97,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h2>Configure osTicket in IIS</h2>
+<img src="https://github.com/user-attachments/assets/eca855b4-41ac-400e-8912-5d1334782c4f" />
+
 <ol>
     <li>In IIS, go to Sites > Default Web Site > osTicket.</li>
     <li>On the right panel, click *Browse :80.</li>
@@ -126,10 +119,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h2>Setup MySQL Database for osTicket</h2>
+<img src="https://github.com/user-attachments/assets/e22e1b01-e06c-408c-8fea-c4138f7a1329" />
+
 <h3>Install HeidiSQL</h3>
 <ol>
 <li> Install HeidiSQL from the osTicket-Installation-Files folder.</li>
@@ -141,10 +133,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h2>Complete osTicket Installation in Browser</h2>
+<img src="https://github.com/user-attachments/assets/ea85ad07-9956-48c5-afa1-51fdce39562f" />
+
 <ol>
 <li> Go back to the osTicket setup page in your browser.</li>
 <li> Fill in the following database settings:
@@ -158,9 +149,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </ol>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h2>Final Cleanup & Security</h2>
 <ol>
 <li> Delete the setup directory:
